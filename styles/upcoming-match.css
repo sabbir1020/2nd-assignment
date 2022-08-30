@@ -1,4 +1,5 @@
-.carts-container{
+ /* cart start  */
+ .carts-container{
     margin-left: 20px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -19,10 +20,17 @@
 .card-title{
     text-align: center;
     margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 .card-title >p{
     margin-top: 5px;
 }
+/* Card End  */
+ 
+                           /*---------------------------
+                                 Media Queries 
+                           -------------- -------------- */
+
 /* Mobile Devices Start  */
 @media only screen and (max-width: 688px) {
     .carts-container{
@@ -32,6 +40,8 @@
 }
 /* Mobile Devices End  */
 
+
+
 /* Tablet Devices Start  */
 @media only screen and  (min-width:688px) and (max-width:992px) {
     .carts-container{
@@ -40,3 +50,4 @@
     }
     
 }
+/* Tablet Devices End  */

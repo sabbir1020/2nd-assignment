@@ -6,29 +6,27 @@
 
 .container{
     margin: 0 90px;
-    /* padding: 70px 0; */
-    /* width: 1000px; */
+   
 }
 .banar-container{
-    /* border: 1px solid saddlebrown; */
+  
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgba(176, 27, 27, 0.42);
     margin-top: 50px;
-    /* margin: 50px 20px; */
-    /* margin:20px 60px ; */
-    /* padding: 30px 100px; */
+    
     
 }
 .banar-title{
     color: #ffffff;
-    /* border: 2px solid rebeccapurple; */
+  
 }
 .banar-title>h1{
     font-size: 30px;
     color: #ffffff;
     font-weight: 700;
+    font-family: 'Poppins', sans-serif;
 }
 .banar-title>p{
     font-size: 15px;
@@ -38,15 +36,19 @@
 .button-btn{
     margin-top: 20px;
     padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
 }
 .banar-img>img{
     width: 250px;
     height: 300px;
-    /* border: 1px solid red; */
-    /* padding: 50px; */
 }
-/* banar section End  */
-/* sidebar-blogs-container start */
+.banar-img>img:hover{
+    cursor: pointer;
+    
+}
+
 .sidebar-blogs-container{
     display: flex;
     margin-top: 40px ;
@@ -60,7 +62,7 @@
     margin-right: 15px;
     position: fixed;
     position: relative;
-    /* display: flex; */
+   
 }
 .sidebar>div> a{
     display: flex;
@@ -79,7 +81,6 @@
   margin-bottom: 20px;
 }
 .article{
-    /* border: 1px solid seagreen; */
     width: 300px;
     box-shadow: 2px 2px 4px gray;
 }
@@ -98,10 +99,19 @@
 .instagram{
     margin-left: 40px;
 }
-
+.view-all>.button-btn{
+    text-align: center;
+    background-color: rgb(117, 29, 23);
+    margin-bottom: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    display: none;
+}
 /* footer start  */
  footer {
-    /* height: 250px; */
+    
     background-color: black;
     text-align: center;
     padding: 70px 0;
@@ -131,13 +141,15 @@
  }
  .footer-icon>i{
     margin-left: 20px;
-    /* background-color: aqua; */
+   
     border: 1px solid rgb(87, 115, 61);
     border-radius: 20px;
     padding: 5px;
  }
 
-/* Media Queries  */
+                  /*---------------------------
+                        Media Queries 
+                  -------------- -------------- */
 
 /* Mobile Devices start  */
 @media only screen and (max-width:688px) {
@@ -168,7 +180,7 @@
 
 @media only screen and (min-width: 688px)and (max-width: 992px) {
     .banar-container{
-        background-color: red;
+        /* background-color: red; */
     }
     .sidebar-blogs-container{
         display: flex;
@@ -180,6 +192,8 @@
         width: 100%;
         justify-content: center;
         align-items: center;
+        margin-bottom: 30px;
+        /* background-color: white; */
         
     }
     .sidebar>div> a{
@@ -189,6 +203,11 @@
     .article-container{
         grid-template-columns: repeat(2,1fr);
         justify-content: center;
+    }
+    .view-all>.button-btn{
+        display: inline;
+       
+        
     }
 
 }
