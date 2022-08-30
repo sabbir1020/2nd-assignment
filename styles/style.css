@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .container{
     margin: 0 90px;
     /* padding: 70px 0; */
@@ -161,6 +162,9 @@
         
     }
 }
+/* Mobile Devices End  */
+
+ /* tablet devices Start  */
 
 @media only screen and (min-width: 688px)and (max-width: 992px) {
     .banar-container{
@@ -188,4 +192,4 @@
     }
 
 }
-
+/* tablet devices End  */

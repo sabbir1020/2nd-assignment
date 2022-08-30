@@ -23,3 +23,20 @@
 .card-title >p{
     margin-top: 5px;
 }
+/* Mobile Devices Start  */
+@media only screen and (max-width: 688px) {
+    .carts-container{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+}
+/* Mobile Devices End  */
+
+/* Tablet Devices Start  */
+@media only screen and  (min-width:688px) and (max-width:992px) {
+    .carts-container{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
+    
+}
