@@ -9,7 +9,7 @@
     /* width: 1000px; */
 }
 .banar-container{
-    border: 1px solid saddlebrown;
+    /* border: 1px solid saddlebrown; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -22,7 +22,7 @@
 }
 .banar-title{
     color: #ffffff;
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
 }
 .banar-title>h1{
     font-size: 30px;
@@ -41,7 +41,7 @@
 .banar-img>img{
     width: 250px;
     height: 300px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* padding: 50px; */
 }
 /* banar section End  */
@@ -98,7 +98,7 @@
 
 /* footer start  */
  footer {
-    height: 250px;
+    /* height: 250px; */
     background-color: black;
     text-align: center;
     padding: 70px 0;
@@ -123,3 +123,28 @@
     margin-left: 20px;
  }
 
+/* Media Queries  */
+
+/* Mobile Devices start  */
+@media only screen and (max-width:688px) {
+    .banar-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar-blogs-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .article-container{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .footer{
+        
+    }
+    .footer-info>a{
+        display: block;
+        margin: 10px;
+        
+    }
+}
